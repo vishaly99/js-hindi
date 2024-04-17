@@ -26,32 +26,42 @@
 // console.log(Jsuser.email)
 
 // const tinderUser=new Object() this is singleton object
-const tinderUser={} //this is a nonsingleton object
+//const tinderUser={} //this is a nonsingleton object
 
-tinderUser.id="123abc"
-tinderUser.name="Sammy"
-tinderUser.isLoggedIn=false
+// tinderUser.id="123abc"
+// tinderUser.name="Sammy"
+// tinderUser.isLoggedIn=false
 
 //console.log(tinderUser)
 
-const regularuser={
-    email:"test@mail.com",
-    fullname:{
-        userfullname:{
-            firstname:"test",
-            lastname:"test123"
-        }
-    }
-}
+// const regularuser={
+//     email:"test@mail.com",
+//     fullname:{
+//         userfullname:{
+//             firstname:"test",
+//             lastname:"test123"
+//         }
+//     }
+// }
 
 //console.log(regularuser.fullname.userfullname.firstname)
 
-const obj1={1:"a",2:"b"}
-const obj2={3:"c",4:"d"}
+// const obj1={1:"a",2:"b"}
+// const obj2={3:"c",4:"d"}
 //const obj3={obj1,obj2}
 //console.log(obj3)
-const obj3=Object.assign(obj1,obj2)
-console.log(obj3)
+// const obj3=Object.assign(obj1,obj2)
+// console.log(obj3)
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInfrastructure:"hitesh"
+}
+//course.courseInfrastructure
+
+const {courseInfrastructure}=course
+console.log(courseInfrastructure)

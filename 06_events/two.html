@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <h1>Async JS Project</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        const sayDate=function(data){
+            console.log(data,Date.now());
+        }
+        
+        const intervalId=setInterval(sayDate,1000,"hi");
+        
+        setInterval(intervalId)
+
+    </script>
+</body>
+</html>
